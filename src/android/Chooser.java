@@ -68,7 +68,7 @@ public class Chooser extends CordovaPlugin {
 		}
 		intent.addCategory(Intent.CATEGORY_OPENABLE);
 		intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, false);
-		intent.putExtra(Intent.EXTRA_LOCAL_ONLY, true);
+		intent.putExtra(Intent.EXTRA_LOCAL_ONLY, false);
 		this.includeData = includeData;
 
 		Intent chooser = Intent.createChooser(intent, "Select File");
